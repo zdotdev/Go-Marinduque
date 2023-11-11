@@ -95,6 +95,9 @@ header{
     font-size: 0 !important; 
 }
 /* Navigation Bar Display */
+#hide{
+    color: var(--neutral-900);
+}
 .navbar-display > div{
     display: flex;
 }
@@ -117,19 +120,54 @@ header{
     margin-top: 4rem;
     padding-left: 4rem;
 }
+.navdisplay1{
+    width: 40rem;
+}
 .navdisplay1 li{
     display: flex;
+    justify-content: space-between;
 }
 .navdisplay1 li a{
+    color: var(--neutral-900);
+    margin: 0 !important    ;
     font-weight: 400 !important;
     font-size: 1.8rem !important;
+    display: flex !important;
+    align-self: center !important;
+}
+.navdisplay1 .material-symbols-outlined{
+    font-size: 1.4rem !important;
+    font-weight: 300 !important;
+}
+.navdisplay1 select{
+    border: 1px solid var(--neutral-900);
+    color: var(--neutral-900);
+    background-color: transparent;
+    height: 2.8rem;
+    margin-top: .8rem;
+    font-size: .8rem;
 }
 .navdisplay1 a{
-    font-size: 1rem;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
     font-weight: 200;
+    color: var(--neutral-900);
 }
 .navdisplay2 p{
+    color: var(--neutral-900);
     font-weight: 600;
+}
+.navdisplay2 img{
+    width: auto;
+    height: 24rem;
+}
+.socmed-icons{
+    padding: 2rem 0rem 0rem 4rem;
+    gap: 2rem;
+}
+.socmed-icons a{
+    font-size: 4rem;
+    color: var(--neutral-900);
 }
 .navbar-display.active{
     left: calc(-121rem + 121rem);
@@ -319,26 +357,27 @@ header{
 }
 .img-txt{
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     margin: 4rem;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
 }
-.img-txt h2{
+.img-txt-h2{
     font-size: .8rem;
     font-weight: 600;
     padding-bottom: 1.2rem;
 }
-.img-txt h3{
+.img-txt-h3{
     font-weight: 700;
     font-size: 2.8rem;
 }
-.img-txt h4{
+.img-txt-h4{
     font-size: 1.2rem;
     font-weight: 300;
 }
 .img-txt span{
+    font-size: 1.2rem;
     font-weight: 600;
 }
 /* Things to Do */
