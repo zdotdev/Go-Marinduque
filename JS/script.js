@@ -12,3 +12,4 @@ window.onload = function(){
             body.classList.remove("active");
         }
 };
+document.getElementById("burger").innerHTML = "Menu";
